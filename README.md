@@ -1,34 +1,34 @@
-# EverPeak Retail Analysis
+# NovaRetail (Análisis Correlacional con Python)
 
-Este repositorio contiene el análisis realizado durante el Sprint 6 del caso EverPeak–SilverBasket.
+Una plataforma de comercio electrónico en Latinoamerica busca entender que factores se relacionan fuertemente con el ingreso anual generado con los clientes
 
-El dataset `everpeak_retail` incluye 2,000 órdenes de clientes con valores faltantes, sentinels, outliers y problemas de calidad diseñados para simular datos reales del retail. :contentReference[oaicite:2]{index=2}
+## Objetivos
 
-## 📂 Contenido del repositorio
+- Identificar relaciones significativas entre variables mediante el uso de heatmaps y scatterplots con Python.
+- Detectar correlaciones engañosas, y documentar los supuestos y limitaciones.
+- Convertir hallazgos en recomendaciones de negocio.
 
-- `[notebooks/everpeak_analysis.ipynb](https://github.com/juanlopacost/EverPeak-Analisys/blob/main/everpeak_analysis.ipynb)`
-  → Notebook principal con limpieza, EDA, distribuciones, outliers y conclusiones.
+## ▶ Datos
 
-## ▶ Cómo abrir el notebook en Google Colab
+Se cuenta con un dataset con 15,000 filas con las siguentes columnas :
 
-Haz clic en el siguiente botón:
+- String: id_cliente.
+- Num: edad, nivel_ingreso, visitas_mes, compras_mes, gasto_publicidad_dirigida, satisfaccion, ingreso_anual.
+- Categorica: region, tipo_dispositivo.
+- Binaria: abandono, miembro_premium.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/juanlopacost/EverPeak-Analisys/blob/main/everpeak_analysis.ipynb)
+## Proceso
 
-O:
-
-1. Abre el archivo `.ipynb` en GitHub
-2. Haz clic en **Open in Colab**
-
-## 📘 Cómo reproducir el análisis
-
-1. Abre `notebooks/everpeak_analysis.ipynb`
-2. Ejecuta las celdas en orden
-3. El notebook carga automáticamente el dataset desde `/data/` o desde un enlace público (según corresponda)
+1. Cargar y explorar datos
+2. Preparar datos y documentar supuestos
+3. Visualización de relaciones
+4. Coeficientes de correlación y evidencia numérica
+5. Interpretación de resultados
+6. Limitaciones y próximos pasos
 
 ## 🧠 Objetivo del análisis
 
 - Identificar problemas de calidad de datos
 - Construir un pipeline de limpieza reproducible
 - Analizar comportamientos, distribuciones y outliers
-- Generar insights para el equipo de Estrategia e Integración de EverPeak
+- Generar insights para el equipo de Estrategia e Integración.
